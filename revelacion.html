@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invitación Revelación de Sexo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to right, #dceffd, #ffe4f0);
+      color: #6b4e36;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 25px 15px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section {
+      margin: 25px 0;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 5px;
+      color: #9e7058;
+    }
+
+    .info {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .teams {
+      display: flex;
+      justify-content: space-around;
+      font-size: 1rem;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    .teams div {
+      width: 45%;
+      margin-bottom: 15px;
+    }
+
+    .btn-container {
+      margin-top: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 8px;
+      font-size: 0.95rem;
+      border-radius: 30px;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-ubicacion {
+      background-color: #b2dcf5;
+      color: #104e76;
+    }
+
+    .btn-asistencia {
+      background-color: #f6c1d4;
+      color: #831c4e;
+    }
+
+    .dedicatoria {
+      font-size: 1rem;
+      color: #9e7058;
+      margin-top: 30px;
+    }
+
+    .autor {
+      font-family: 'Georgia', serif;
+      font-size: 0.8rem;
+      color: #a68c91;
+      margin-top: 30px;
+      font-style: italic;
+    }
+
+    .countdown {
+      font-size: 1.3rem;
+      margin-top: 15px;
+      font-weight: bold;
+      background-color: #fff2f7;
+      padding: 10px;
+      border-radius: 15px;
+      color: #b04e6f;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .header-decor {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .header-decor img.osito {
+      width: 80px;
+    }
+
+    .clouds {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0 20px;
+    }
+
+    .clouds img {
+      width: 50px;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-out both;
+    }
+
+    /* Burbujas de fondo */
+    .bubbles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .bubble {
+      position: absolute;
+      bottom: -100px;
+      background: rgba(255, 182, 193, 0.3);
+      border-radius: 50%;
+      animation: rise 20s infinite ease-in;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bubbles">
+    <!-- Puedes duplicar o cambiar tamaños para más efecto -->
+    <div class="bubble" style="width: 40px; height: 40px; left: 10%; animation-delay: 0s;"></div>
+    <div class="bubble" style="width: 25px; height: 25px; left: 20%; animation-delay: 4s;"></div>
+    <div class="bubble" style="width: 50px; height: 50px; left: 35%; animation-delay: 2s;"></div>
+    <div class="bubble" style="width: 30px; height: 30px; left: 50%; animation-delay: 6s;"></div>
+    <div class="bubble" style="width: 20px; height: 20px; left: 70%; animation-delay: 1s;"></div>
+    <div class="bubble" style="width: 45px; height: 45px; left: 85%; animation-delay: 3s;"></div>
+  </div>
+
+  <div class="container fade-in">
+    <div class="section header-decor fade-in">
+      <img src="https://media-public.canva.com/jtf2g/MAFIagjtf2g/1/tl.png" alt="Osito azul1" class="osito" />
+      <img src="https://media-public.canva.com/xi9Wg/MAFIahxi9Wg/1/tl.png" alt="Osito rosa2" class="osito" />
+    </div>
+
+    <div class="clouds fade-in">
+      <img src="https://media-public.canva.com/N8XzQ/MAFqI5N8XzQ/1/tl.png" alt="Nube 1" />
+      <img src="https://media-public.canva.com/HTSwo/MAFqI6HTSwo/1/tl.png" alt="Nube 2" />
+    </div>
+
+    <h1 class="fade-in">
+      <span style="color:#4a90e2;">Niño</span> o <span style="color:#e26ca5;">Niña</span>
+    </h1>
+    <h2 class="fade-in">Gender Reveal Party</h2>
+    <div class="countdown fade-in" id="countdown"></div>
+
+    <div class="section fade-in">
+      <p class="info">🗓️ Martes, 14 de mayo</p>
+      <p class="info">⏰ 17:30 hs</p>
+      <p class="info">📍 Quinta Ña Mirian</p>
+    </div>
+
+    <div class="section teams fade-in">
+      <div>
+        <p><strong>Team Niño 💙</strong></p>
+        <p>¡Venir con algo azul!</p>
+        <img src="https://media-public.canva.com/_nXS0/MAGCfd_nXS0/1/tl.png" alt="Osito azul" width="80"/>
+      </div>
+      <div>
+        <p><strong>Team Niña 💖</strong></p>
+        <p>¡Venir con algo rosa!</p>
+        <img src="https://media-public.canva.com/eNfHg/MAGCffeNfHg/1/tl.png" alt="Osito rosa" width="80"/>
+      </div>
+    </div>
+
+    <div class="section btn-container fade-in">
+      <a href="https://maps.app.goo.gl/YNob3qVc6xcA27Nv8" target="_blank" class="btn btn-ubicacion">
+        📍 Ver ubicación
+      </a>
+      <a href="https://wa.me/595982346585?text=¡Confirmo mi asistencia a la revelación! 🎈" target="_blank" class="btn btn-asistencia">
+        ✅ Confirmar asistencia
+      </a>
+    </div>
+
+    <p class="dedicatoria fade-in">
+      Esta fiesta es un sueño hecho realidad, gracias por ser parte de este momento tan especial 💕.
+    </p>
+
+    <p class="autor">© 2025 vduartem</p>
+  </div>
+
+  <script>
+    const countdown = document.getElementById('countdown');
+    const targetDate = new Date('May 14, 2025 17:30:00').getTime();
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        countdown.innerHTML = "¡Ya llegó el gran día!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `Faltan ${days} días, ${hours} h, ${minutes} m, ${seconds} s`;
+    };
+
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
